@@ -9,6 +9,8 @@ import PageWrapper from "./components/PageWrapper";
 import Home from "./components/Pages/Home";
 import About from "./components/Pages/About";
 import Contact from "./components/Pages/Contact";
+import Services from "./components/common/Services";
+import Portfolio from "./components/common/Portfolio";
 
 class App extends Component {
     render() {
@@ -30,6 +32,17 @@ class App extends Component {
                         path="/contact"
                         component={Contact}
                     />
+
+                    <Route
+                        path="/services"
+                        component={Services}
+                    />
+
+                    <Route
+                        path="/portfolio"
+                        component={Portfolio}
+                    />
+
                 </PageWrapper>
             </Router>
         );
